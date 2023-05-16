@@ -2,242 +2,250 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>France</title>
-	<meta name="author" content="name" />
-	<meta name="description" content="description here" />
-	<meta name="keywords" content="keywords,here" />
-	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-	<!--Replace with your tailwind.css once created-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Midterm Project</title>
+    <meta name="author" content="name" />
+    <meta name="description" content="This is our midterm project website." />
+    <meta name="keywords" content="Japan, France, HTML, CSS, Tailwindcss" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <nav class="bg-gray-800">
+        <div class="mx-auto lg:flex justify-center max-w-7xl px-2 md:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
 
-	<nav id="header" class="fixed w-full z-10 top-0">
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
 
-		<div id="progress" class="h-1 z-20 top-0"
-			style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center lg:gap-[250px] md:w-full md:justify-between">
+                    <div class="flex gap-3 flex-shrink-0 items-center">
+                        <img class="block h-8 w-auto rounded" src="img/japan.jpg" alt="Japan" />
+                        <h1 class="font-bold text-gray-100 text-3xl">SIT Blog</h1>
+                    </div>
+                    <div class="hidden md:ml-6 md:block">
+                        <div class="flex space-x-4">
+                            <a href="index.html"
+                                class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white border border-gray-500 hover:scale-105 transition-transform duration-300"
+                                aria-current="page">Home</a>
+                            <a href="japan.html"
+                                class="rounded-md border border-gray-500 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105 transition-transform duration-300 whitespace-nowrap">Japan
+                                Experience</a>
+                            <a href="tim.html"
+                                class="rounded-md border border-gray-500 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105 transition-transform duration-300">Tim</a>
+                            <a href="evan.html"
+                                class="rounded-md border border-gray-500 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105 transition-transform duration-300">Evan</a>
+                            <a href="sam.html"
+                                class="rounded-md border border-gray-500 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105 transition-transform duration-300">Sam</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
+        <div class="hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+                <a href="index.html" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                    aria-current="page">Home</a>
+                <a href="japan.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Japan</a>
+                <a href="tim.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Tim</a>
+                <a href="evan.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Evan</a>
+                <a href="sam.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Sam</a>
+            </div>
+        </div>
+    </nav>
 
-			<div class="pl-4">
-				<a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="#">
-					Cool Team Website
-				</a>
-			</div>
+    <main>
+        <!--Container-->
+        <div class="container w-full mx-auto pt-20 pb-20 pl-4 pr-4">
+            <!-- Container div, width full page, centered using auto margins and paddings -->
 
-			<div class="block lg:hidden pr-4">
-				<button id="nav-toggle"
-					class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none">
-					<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-						<title>Menu</title>
-						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-					</svg>
-				</button>
-			</div>
+            <h1 class="text-5xl font-extrabold dark:text-white text-center">Timothy Didierjean</h1><br>
+            <!-- Large bold title centered and rendered in white if there is a dark mode -->
 
-			<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20"
-				id="nav-content">
-				<ul class="list-reset lg:flex justify-end flex-1 items-center">
-					<li class="mr-3">
-						<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="japan.html">Japan</a>
-					</li>
-					<li class="mr-3">
-						<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
-							href="france.html">France</a>
-					</li>
-					<li class="mr-3">
-						<a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline"
-							href="usa.html">USA</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+            <hr class="w-48 h-1 mx-auto my-4 bg-gray-400 border-0 rounded">
+            <!-- Large gray line used as a separator, centered with auto margins (it's actually just a rounded border of a class) -->
 
-	<!--Container-->
-		<div class="container w-full mx-auto pt-20 pb-20 pl-4 pr-4">
-		<!-- Container div, width full page, centered using auto margins and paddings -->
+            <img class="max-w-xs mx-auto rounded-full" src="img/timothy_didierjean.png" alt="My picture">
+            <!-- A picture of me centered with auto margins, rendered within a circle -->
 
-		<h1 class="text-5xl font-extrabold dark:text-white text-center">Timothy Didierjean</h1><br>
-		<!-- Large bold title centered and rendered in white if there is a dark mode -->
+            <p class="text-xl">Hi, 👋</p><br>My name is Timothy and I'm a 19 years old french student currently studying
+            at Shibaura Institute of Technology in Japan during this semester.
 
-		<hr class="w-48 h-1 mx-auto my-4 bg-gray-400 border-0 rounded">
-		<!-- Large gray line used as a separator, centered with auto margins (it's actually just a rounded border of a class) -->
+            <br>
+            <hr class="h-px my-8 bg-gray-300 border-0">
+            <!-- Gray line used as a separator, centered using auto margins (it's actually just a rounded border of a class) -->
 
-		<img class="max-w-xs mx-auto rounded-full" src="img/timothy_didierjean.png" alt="My picture">
-		<!-- A picture of me centered with auto margins, rendered within a circle -->
+            <h2 class="text-4xl font-bold dark:text-white">My Shool Curriculum</h2><br>
+            <!-- Second title in bold and rendered in white if there is a dark theme -->
 
-		<p class="text-xl">Hi, 👋</p><br>My name is Timothy and I'm a 19 years old french student currently studying at Shibaura Institute of Technology in Japan during this semester.
+            I'm in my 2nd year as a Computer Science student at Epita in Strasbourg, a French engineering school. <br>
+            There, I've learned to program in various languages like OCaml, Python, C# and C but I didn't get the chance
+            to learn Web programming, that's why I took this class. <br><br>
 
-		<br><hr class="h-px my-8 bg-gray-300 border-0">
-		<!-- Gray line used as a separator, centered using auto margins (it's actually just a rounded border of a class) -->
+            I chose to study at SIT this semester for two main reasons:
 
-		<h2 class="text-4xl font-bold dark:text-white">My Shool Curriculum</h2><br>
-		<!-- Second title in bold and rendered in white if there is a dark theme -->
+            <ul class="list-disc list-inside">
+                <!-- Buller point list, located inside the parent container -->
+                <li>I've always wanted to go to Japan, and studying aborad was a perfect time to visit Japan.</li>
+                <li>Because SIT is a well known university in Tokyo with a very high reputation.</li>
+            </ul>
 
-		I'm in my 2nd year as a Computer Science student at Epita in Strasbourg, a French engineering school. <br>
-		There, I've learned to program in various languages like OCaml, Python, C# and C but I didn't get the chance to learn Web programming, that's why I took this class. <br><br>
-		
-		I chose to study at SIT this semester for two main reasons:
+            <br><br>
+            <h3 class="text-3xl font-bold dark:text-white">My Projects</h3><br>
+            <!-- Third title in bold and rendered in white if there is a dark theme -->
 
-		<ul class="list-disc list-inside">
-		<!-- Buller point list, located inside the parent container -->
-			<li>I've always wanted to go to Japan, and studying aborad was a perfect time to visit Japan.</li>
-			<li>Because SIT is a well known university in Tokyo with a very high reputation.</li>
-		</ul>
+            Here is a list of my most ambitious projects done for my school: <br><br>
 
-		<br><br><h3 class="text-3xl font-bold dark:text-white">My Projects</h3><br>
-		<!-- Third title in bold and rendered in white if there is a dark theme -->
+            <!-- Accordeon Menu -->
+            <div class="justify-center w-full">
+                <!-- Centered and using full width -->
+                <div class="divide-y-2 border-solid border-2">
+                    <!-- Add separator between each item using a border -->
+                    <details>
+                        <summary class="px-8 py-2 text-lg">Abacus</summary>
+                        <!-- Accordeaon sectin title, used some padding and a large text -->
+                        <p class="px-3 py-2">
+                            <!-- Accordeon content with some padding -->
+                            Abacus was a two week project done in C# where the goal was to make a command-line
+                            calculator supporting basic operations (+, -, *, /), priorities (parentheses > * / > + -),
+                            and variables. <br>
+                        <div class="px-4 bg-gray-200">
+                            <!-- Section for the example of Abacus, some padding and a gray background used-->
+                            <code>$ a = 42; b = a / 2; -1 + 2 * (a + b)</code> <br>
+                            <code>> 126</code>
+                        </div>
+                        </p>
+                    </details>
+                    <details>
+                        <summary class="px-8 py-2 text-lg">AlteraVita</summary>
+                        <!-- Accordeaon sectin title, used some padding and a large text -->
+                        <p class="px-3 py-2">
+                            <!-- Accordeon content with some padding -->
+                            AlteraVita is a Unity game made in one semester in a group of 4. <br>
+                            It's 2D cooperation game supporting online multiplayer.
 
-		Here is a list of my most ambitious projects done for my school: <br><br>
+                            <img src="img/arrows_v2.png" class="object-scale-down w-full">
+                            <!-- Image of the game, using full width and then scaled down to easily center it and add margins -->
+                        </p>
+                    </details>
+                    <details>
+                        <summary class="px-8 py-2 text-lg">CKC</summary>
+                        <!-- Accordeaon sectin title, used some padding and a large text -->
+                        <p class="px-3 py-2">
+                            <!-- Accordeon content with some padding -->
+                            CKC was an application able to resolve any picture of sudoku using Optical Character
+                            Recognition. It was made in one semester in a group of 4 people.
+                            <img src="img/sudoku.png" class="object-scale-down w-full">
+                            <img src="img/ui_ocr.png" class="object-scale-down w-full">
+                            <!-- Images of the app, using full width and then scaled down to easily center it and add margins -->
+                        </p>
+                </div>
+            </div>
 
-		<!-- Accordeon Menu -->
-		<div class="justify-center w-full">
-			<!-- Centered and using full width -->
-		   <div class="divide-y-2 border-solid border-2">
-				<!-- Add separator between each item using a border -->
-		        <details>
-		            <summary class="px-8 py-2 text-lg">Abacus</summary>
-					<!-- Accordeaon sectin title, used some padding and a large text -->
-		                <p class="px-3 py-2">
-						<!-- Accordeon content with some padding -->
-							Abacus was a two week project done in C# where the goal was to make a command-line calculator supporting basic operations (+, -, *, /), priorities (parentheses > * / > + -), and variables. <br>
-							<div class="px-4 bg-gray-200">
-							<!-- Section for the example of Abacus, some padding and a gray background used-->
-								<code>$ a = 42; b = a / 2; -1 + 2 * (a + b)</code> <br>
-								<code>> 126</code>
-							</div>
-		                </p>
-		        </details>
-		        <details>
-		            <summary class="px-8 py-2 text-lg">AlteraVita</summary>
-					<!-- Accordeaon sectin title, used some padding and a large text -->
-		                <p class="px-3 py-2">
-						<!-- Accordeon content with some padding -->
-							AlteraVita is a Unity game made in one semester in a group of 4. <br>
-							It's 2D cooperation game supporting online multiplayer.
+            <br>
+            <hr class="h-px my-8 bg-gray-300 border-0">
+            <!-- Gray line used as a separator, centered using auto margins (it's actually just a rounded border of a class) -->
 
-						<img src="img/arrows_v2.png" class="object-scale-down w-full">
-						<!-- Image of the game, using full width and then scaled down to easily center it and add margins -->
-						</p>							
-		        </details>
-		        <details>
-		            <summary class="px-8 py-2 text-lg">CKC</summary>
-					<!-- Accordeaon sectin title, used some padding and a large text -->
-		                <p class="px-3 py-2">
-						<!-- Accordeon content with some padding -->
-							CKC was an application able to resolve any picture of sudoku using Optical Character Recognition. It was made in one semester in a group of 4 people.
-						<img src="img/sudoku.png" class="object-scale-down w-full">
-						<img src="img/ui_ocr.png" class="object-scale-down w-full">
-						<!-- Images of the app, using full width and then scaled down to easily center it and add margins -->
-						</p>							
-		    </div>
-		</div>
-		
-		<br><hr class="h-px my-8 bg-gray-300 border-0">
-		<!-- Gray line used as a separator, centered using auto margins (it's actually just a rounded border of a class) -->
+            <h2 class="text-4xl font-bold dark:text-white">About Me</h2><br>
+            <!-- Second title in bold and rendered in white if there is a dark theme -->
 
-		<h2 class="text-4xl font-bold dark:text-white">About Me</h2><br>
-		<!-- Second title in bold and rendered in white if there is a dark theme -->
-
-		When I have free time I like to play video games as well as board games and read books such as novels and mangas, and I sometimes go to bouldering gyms as it allows me to practice to my favorite sport. <br>
-		As a lot of other people my favorite things to do are eating and sleeping, and fortunately for me Japan is one of the best place to eat well and cheap, so I'm very happy to be here. <br><br>
-		Apart from that my life is not very interesting so I don't have anything else to say.
-
-
-
-
-	</div>
-	<!--/container-->
-
-	<footer class="bg-white border-t border-gray-400 shadow">
-		<div class="container max-w-4xl mx-auto flex py-8">
-
-			<div class="w-full mx-auto flex flex-wrap">
-				<div class="flex w-full md:w-1/2 ">
-					<div class="px-8">
-						<h3 class="font-bold text-gray-900">About</h3>
-						<p class="py-4 text-gray-600 text-sm">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis tempus
-							commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia.
-						</p>
-					</div>
-				</div>
-
-				<div class="flex w-full md:w-1/2">
-					<div class="px-8">
-						<h3 class="font-bold text-gray-900">Social</h3>
-						<ul class="list-reset items-center text-sm pt-3">
-							<li>
-								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-									href="#">Add social link</a>
-							</li>
-							<li>
-								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-									href="#">Add social link</a>
-							</li>
-							<li>
-								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-									href="#">Add social link</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+            When I have free time I like to play video games as well as board games and read books such as novels and
+            mangas, and I sometimes go to bouldering gyms as it allows me to practice to my favorite sport. <br>
+            As a lot of other people my favorite things to do are eating and sleeping, and fortunately for me Japan is
+            one of the best place to eat well and cheap, so I'm very happy to be here. <br><br>
+            Apart from that my life is not very interesting so I don't have anything else to say.
 
 
 
-		</div>
-	</footer>
 
-	<script>
-		/* Progress bar */
-		//Source: https://alligator.io/js/progress-bar-javascript-css-variables/
-		var h = document.documentElement,
-			b = document.body,
-			st = 'scrollTop',
-			sh = 'scrollHeight',
-			progress = document.querySelector('#progress'),
-			scroll;
-		var scrollpos = window.scrollY;
-		var header = document.getElementById("header");
-		var navcontent = document.getElementById("nav-content");
+        </div>
+        <!--/container-->
 
-		document.addEventListener('scroll', function () {
+    </main>
 
-			/*Refresh scroll % width*/
-			scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
-			progress.style.setProperty('--scroll', scroll + '%');
-
-			/*Apply classes for slide in bar*/
-			scrollpos = window.scrollY;
-
-			if (scrollpos > 10) {
-				header.classList.add("bg-white");
-				header.classList.add("shadow");
-				navcontent.classList.remove("bg-gray-100");
-				navcontent.classList.add("bg-white");
-			} else {
-				header.classList.remove("bg-white");
-				header.classList.remove("shadow");
-				navcontent.classList.remove("bg-white");
-				navcontent.classList.add("bg-gray-100");
-
-			}
-
-		});
-
-
-		//Javascript to toggle the menu
-		document.getElementById('nav-toggle').onclick = function () {
-			document.getElementById("nav-content").classList.toggle("hidden");
-		}
-	</script>
+    <footer class="border-t bg-gray-800 shadow">
+        <div class="container max-w-4xl mx-auto flex flex-col gap-6 items-center justify-center pt-6 pb-2">
+            <div class="w-full mx-auto flex justify-center flex-wrap">
+                <div class="flex w-full md:w-1/2 ">
+                    <div class="px-8">
+                        <h3 class="font-bold text-gray-300">About</h3>
+                        <p class="py-4 text-gray-200 text-sm">
+                            This website was made with ❤️ by Evan, Tim and Sam!
+                        </p>
+                    </div>
+                </div>
+                <div class="flex w-full md:w-1/2">
+                    <div class="px-8">
+                        <h3 class="font-bold text-gray-300">Githubs</h3>
+                        <ul class="list-reset items-center gap-6 text-sm pt-1">
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="white"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                <a class="inline-block text-gray-300 hover:text-indigo-400 hover:underline text-indigo-300 text-lg py-1"
+                                    href="#">Beamcode</a>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="white"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                <a class="inline-block text-gray-300 hover:text-indigo-400 hover:underline text-indigo-300 text-lg py-1"
+                                    href="#">Tim-xD</a>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="white"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                <a class="inline-block text-gray-300 hover:text-indigo-400 hover:underline text-indigo-300 text-lg py-1"
+                                    href="#">EvanIov</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="text-gray-300 text-sm">© Copyright 2023</p>
+        </div>
+    </footer>
 
 </body>
+
+<script>
+    const button = document.querySelector('[aria-controls="mobile-menu"]');
+    const menu = document.getElementById('mobile-menu');
+
+    button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true' || false;
+        button.setAttribute('aria-expanded', !expanded);
+        menu.classList.toggle('hidden');
+    });
+</script>
 
 </html>

@@ -32,7 +32,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
-                        <!-- Burder menu icon -->
+                        <!-- Burger menu icon -->
 
                         <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" aria-hidden="true">
@@ -44,7 +44,7 @@
                 <!-- Navbar menu buttons -->
                     <div class="flex gap-3 flex-shrink-0 items-center">
                         <img class="block h-8 w-auto rounded" src="img/sit.png" alt="Japan" />
-                        <!-- Navbar's Japanese flag -->
+                        <!-- Navbar's image -->
                         <h1 class="font-bold text-gray-100 text-3xl">SIT Blog</h1>
                         <!-- Navbar's title -->
                     </div>
@@ -89,6 +89,7 @@
 			
 			<!--Extra large, bolded, centered header with a black bottom border-->
 			<h1 class="text-6xl font-bold text-center border-b-4 border-black pb-8 w-2/3 mx-auto">Evan Iovanisci</h1>
+                        <br><p class="text-sm text-center md:text-base font-normal text-gray-600">Published 17 May 2023</p>
 
             <!--flexbox div, padding on top and bottom, row when medium screen, col when small screen-->
 			<div class="flex flex-col md:flex-row gap-7 py-6 items-center mt-10">
@@ -148,16 +149,41 @@
 						see all of the photos that other people upload to the website.
 					</p>
 				</div>
-                <!--flex column containeer so I could add 2px spacing between each photo-->
-				<div class="flex flex-col space-y-2">
-                    <!--photos of my previous projects, width full and auto adjusting height except covid tracker has height 40-->
-					<img src="img/covid-tracker.png" alt="my covid tracker project" class="w-full h-40">
-					<img src="img/sens-converter.png" alt="my sensitivity converter project" class="w-full h-auto">
-					<img src="img/my-travels1.png" alt="my website photo 1" class="w-full h-auto">
-					<img src="img/my-travels2.png" alt="my website photo 2" class="w-full h-auto">
-					<img src="img/my-travels3.png" alt="my website photo 3" class="w-full h-auto">
-				</div>
 			</div>
+        
+            <!-- Accordeon Menu -->
+            <div class="justify-center w-full">
+                <!-- Centered and using full width -->
+                <div class="divide-y-2 border-solid border-2">
+                    <!-- Add separator between each item using a border -->
+                    <details>
+                        <summary class="px-8 py-2 text-lg">Covid Tracker</summary>
+                        <!-- Accordeon section title, used some padding and a large text -->
+                        <p class="px-3 py-2">
+                            <!-- Accordeon content with some padding -->
+			    <img src="img/covid-tracker.png" alt="my covid tracker project" class="mx-auto">
+                        </p>
+                    </details>
+                    <details>
+                        <summary class="px-8 py-2 text-lg">Sensitivity Converter</summary>
+                        <!-- Accordeon section title, used some padding and a large text -->
+                        <p class="px-3 py-2">
+                            <!-- Accordeon content with some padding -->
+                            <img src="img/sens-converter.png" alt="my sensitivity converter project" class="object-scale-down w-full">
+                        </p>
+                    </details>
+                    <details>
+                        <summary class="px-8 py-2 text-lg">My Website</summary>
+                        <!-- Accordeon section title, used some padding and a large text -->
+                        <p class="px-3 py-2">
+                            <!-- Accordeon content with some padding -->
+                            <img src="img/my-travels1.png" alt="my website photo 1"  class="object-scale-down w-full"><br>
+                            <img src="img/my-travels2.png" alt="my website photo 2"  class="object-scale-down w-full"><br>
+                            <img src="img/my-travels3.png" alt="my website photo 3"  class="object-scale-down w-full">
+                        </p>
+                    </details>
+                </div>
+            </div>
 
             <!--div to contain my country section, padding on top and bottom with extra margin at the top-->
 			<div class="py-6 mt-10">

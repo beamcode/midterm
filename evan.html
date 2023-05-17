@@ -86,19 +86,104 @@
     </nav>
 
 	<main>
-		<!--Container-->
-		<div class="container w-full md:max-w-3xl mx-auto pt-20">
-			<h1>LOL</h1>
+		<!--Container, fits full page, spaced using padding and margins-->
+		<div class="container w-full md:max-w-3xl mx-auto md:py-20 pb-10 pr-8 pl-8">
+			
+			<!--Extra large, bolded, centered header with a black bottom border-->
+			<h1 class="text-6xl font-bold text-center border-b-4 border-black pb-8 w-2/3 mx-auto">Evan Iovanisci</h1>
 
+            <!--flexbox div, padding on top and bottom, row when medium screen, col when small screen-->
+			<div class="flex flex-col md:flex-row gap-7 py-6 items-center mt-10">
+                <!--img of me rounded, transparent black border with a drop back shadow-->
+				<img src="img/evan.JPG" alt="picture of me" class="w-60 h-auto border-2 border-black rounded-full drop-shadow-lg border-opacity-20">
+				<!--container to hold about me header and paragraph-->
+                <div id="about-me-container">
+                    <!--about me header, extra large, medium weight font-->
+					<h2 class="text-3xl mb-5 font-medium">About Me</h2>
+					<p class="text-lg">
+						Hi my name is Evan, I'm a 21 year old Computer Science major from the United States currently studying 
+						abroad here at SIT. I’m in my 4th year of study at Rowan University, my University back home in New Jersey, USA. 
+						It has always been a dream of mine to be able to speak more than one language so I started taking Japanese language 
+						classes at my home university and when I heard about the opportunity to study abroad in Japan I knew I had to take it. 
+						I am loving my time here so far and can only imagine it getting even better from here.
+					</p>
+				</div>
+			</div>
 
-			<!--/Next & Prev Links-->
+            <!--div to contain my hobbies section, padding on top and bottom with extra margin at the top-->
+			<div class="py-6 mt-10">
+                <!--my hobbies header, extra large, medium weight font with extra margin at the bottom-->
+				<h2 class="text-3xl mb-5 font-medium">My Hobbies</h2>
+				<p class="text-lg mb-5">
+					Some of my hobbies include fishing, snowboarding, hiking, dirtbike riding, cooking, playing video games,
+					watching anime, and more. I also really enjoy taking pictures of everything I do so here are a few photos
+					from some of my hobbies.
+				</p>
+                <!--grid div, 4 col when screen is large, 3 col when medium, and 2 col when small-->
+				<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!--images of my hobbies, full width with height auto adjusting-->
+					<img src="img/snowboarding1.jpg" alt="snowboarding image 1" class="w-full h-auto">
+					<img src="img/fishing2.JPG" alt="fishing image 2" class="w-full h-auto">
+					<img src="img/dirtbike.jpg" alt="dirtbiking image" class="w-full h-auto">
+					<img src="img/hiking.jpg" alt="hiking image" class="w-full h-auto">
+					<img src="img/fishing1.jpg" alt="fishing image 1" class="w-full h-auto">
+					<img src="img/snowboarding2.jpg" alt="snowboarding image 2" class="w-full h-auto">
+					<img src="img/cooking1.jpg" alt="cooking image 1" class="w-full h-auto">
+					<img src="img/cooking2.jpg" alt="cooking image 2" class="w-full h-auto">
+				</div>
+			</div>
+
+            <!--flexbox div, padding on top and bottom, row when medium screen, col when small screen-->
+			<div class="flex flex-col md:flex-row gap-7 py-6 items-center mt-10">
+                <!--container to hold previous projects header and paragraph-->
+                <div id="previous-projects-container">
+                    <!--previous projects header, extra large, medium weight font-->
+					<h2 class="text-3xl mb-5 font-medium">Previous Projects</h2>
+					<p class="text-lg">
+						Here are a few of the projects that I have worked on over the last couple of years in University. 
+						The first project is a Covid-19 Tracker application that shows Covid-19 data and information in the 
+						South Jersey area. The next one is a semester-long project that I worked on with 3 other group members. 
+						The second project is a FPS game mouse sensitivity converter that I made on my own time, it is very simple 
+						and was also coded in Java. The last project is another semester-long project that I worked on by myself 
+						called My Travels. It is a website where people can keep track of the countries they have visited and all 
+						of the countries they wish to visit. You can also upload all of the photos that you took in each country and 
+						see all of the photos that other people upload to the website.
+					</p>
+				</div>
+                <!--flex column containeer so I could add 2px spacing between each photo-->
+				<div class="flex flex-col space-y-2">
+                    <!--photos of my previous projects, width full and auto adjusting height except covid tracker has height 40-->
+					<img src="img/covid-tracker.png" alt="my covid tracker project" class="w-full h-40">
+					<img src="img/sens-converter.png" alt="my sensitivity converter project" class="w-full h-auto">
+					<img src="img/my-travels1.png" alt="my website photo 1" class="w-full h-auto">
+					<img src="img/my-travels2.png" alt="my website photo 2" class="w-full h-auto">
+					<img src="img/my-travels3.png" alt="my website photo 3" class="w-full h-auto">
+				</div>
+			</div>
+
+            <!--div to contain my country section, padding on top and bottom with extra margin at the top-->
+			<div class="py-6 mt-10">
+                <!--flexbox container with items centered to put flag on same line as header-->
+				<div class="flex items-center">
+                    <!--my country header, extra large, medium weight font-->
+					<h2 class="text-3xl mb-5 font-medium">My Country</h2>
+                    <!--img of USA flag, width auto, height 16 and padding on the left so it isn't touching the header-->
+					<img src="img/us-flag.png" alt="USA flag" class="w-auto h-16 pl-5">
+				</div>
+				<p class="text-lg">
+					Despite how often people (myself included) may joke about the US because of some of the crazy things 
+					that happen there, I still believe that it is a great country. The United States is a big country so it has 
+					lots of different cultures and environments which is one of the reasons why I think it’s great. When people 
+					think of American cuisine they may just think of hamburgers and hotdogs but there are plenty of good foods 
+					such as American Style BBQ, Jambalaya, Cheesesteaks, and much more.
+				</p>
+			</div>
 
 		</div>
 		<!--/container-->
 	</main>
 
-
-    <footer class="border-t bg-gray-800 shadow">
+	<footer class="border-t bg-gray-800 shadow">
         <div class="container max-w-4xl mx-auto flex flex-col gap-6 items-center justify-center pt-6 pb-2">
             <div class="w-full mx-auto flex justify-center flex-wrap">
                 <div class="flex w-full md:w-1/2 ">

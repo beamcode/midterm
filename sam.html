@@ -71,7 +71,8 @@
         <div class="hidden md:hidden" id="mobile-menu">
             <!-- Menu that appears when using the burger menu -->
             <div class="space-y-1 px-2 pb-3 pt-2">
-                <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                <a href="index.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
                     aria-current="page">Home</a>
                 <a href="tim.html"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Tim</a>
@@ -128,8 +129,11 @@
                 </div>
 
                 <div class="py-6">
-                    <h2 class="text-2xl font-bold text-black" style="float: left;">My Country&ensp;</h2>
-                    <img class="h-8 w-auto rounded" style="float: left; position: relative;" src="img/france-flag.png" alt="France flag"/><br><br><br>
+                    <div class="flex items-center">
+                        <h2 class="text-2xl font-bold text-black">My Country&ensp;</h2>
+                        <img class="h-8 w-auto rounded" src="img/france-flag.png" alt="France flag" />
+                    </div>
+
                     <!-- Image with rounded corners -->
                     <div class="flex flex-col items-center md:items-start gap-5 py-6">
                         <p>I love France! It's got cool history, amazing buildings, and really good food. But,
@@ -169,19 +173,37 @@
                 </div>
 
                 <div class="py-6">
-                    <h3 class="text-2xl font-bold text-black">My Projects</h3>
+                    <h3 class="text-2xl font-bold text-black pb-3">My Projects</h3>
+                    <!-- Accordeon Menu -->
+                    <div class="justify-center w-full">
+                        <!-- Centered and using full width -->
+                        <div class="divide-y-2 border-solid border-2">
+                            <!-- Add separator between each item using a border -->
+                            <details>
+                                <summary class="px-8 py-2 text-lg">Bounce Master Unity Game</summary>
+                                <!-- Accordeon section title, used some padding and a large text -->
+                                <p class="flex flex-col gap-3 px-3 py-2">
+                                    <!-- Accordeon content with some padding -->
+                                    <img src="img/bm-1.png" alt="my sensitivity converter project"
+                                        class="object-scale-down w-full">
+                                    <img src="img/bm-2.png" alt="my sensitivity converter project"
+                                        class="object-scale-down w-full">
+                                    <img src="img/bm-3.png" alt="my sensitivity converter project"
+                                        class="object-scale-down w-full">
+                                </p>
+                            </details>
+                            <details>
+                                <summary class="px-8 py-2 text-lg">My Website</summary>
+                                <!-- Accordeon section title, used some padding and a large text -->
+                                <p class="px-3 py-2">
+                                    <!-- Accordeon content with some padding -->
+                                    <img src="img/sam-website.png" alt="my website photo 1"
+                                        class="object-scale-down w-full"><br>
+                                </p>
+                            </details>
+                        </div>
+                    </div>
                 </div>
-
-                <p class="py-6">Example code block:</p>
-                <pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
-				<code class="break-words whitespace-pre-wrap">
-&lt;header class="site-header outer"&gt;
-&lt;div class="inner"&gt;
-{{&gt; "site-nav"}}
-&lt;/div&gt;
-&lt;/header&gt;
-				</code>
-			</pre>
             </div>
         </div>
     </main>

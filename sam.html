@@ -10,71 +10,83 @@
 	<meta name="description" content="This is our midterm project website." />
 	<meta name="keywords" content="Japan, France, HTML, CSS, Tailwindcss" />
 	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- Import TailwindCSS -->
 </head>
 
 
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-	<nav class="bg-gray-800">
-		<div class="mx-auto lg:flex justify-center max-w-7xl px-2 md:px-6 lg:px-8">
-			<div class="relative flex h-16 items-center justify-between">
-				<div class="absolute inset-y-0 left-0 flex items-center md:hidden">
-					<button type="button"
-						class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-						aria-controls="mobile-menu" aria-expanded="false">
-						<span class="sr-only">Open main menu</span>
+    <nav class="bg-gray-800">
+    <!-- Nav bar -->
+        <div class="mx-auto lg:flex justify-center max-w-7xl px-2 md:px-6 lg:px-8">
+        <!-- Flex to make it responsive -->
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
+                <!-- Burger menu div if page width is small, else it gets hidden -->
+                    <button type="button"
+                        class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
 
-						<svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-							stroke="currentColor" aria-hidden="true">
-							<path stroke-linecap="round" stroke-linejoin="round"
-								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-						</svg>
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <!-- Burder menu icon -->
 
-						<svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-							stroke="currentColor" aria-hidden="true">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-						</svg>
-					</button>
-				</div>
-				<div class="flex flex-1 items-center justify-center lg:gap-[250px] md:w-full md:justify-between">
-					<div class="flex gap-3 flex-shrink-0 items-center">
-						<img class="block h-8 w-auto rounded" src="img/japan.jpg" alt="Japan" />
-						<h1 class="font-bold text-gray-100 text-3xl">SIT Blog</h1>
-					</div>
-					<div class="hidden md:ml-6 md:block">
-						<div class="flex space-x-4">
-							<a href="index.html"
-								class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white border border-gray-500 hover:scale-105 transition-transform duration-300"
-								aria-current="page">Home</a>
-							<a href="japan.html"
-								class="rounded-md border border-gray-500 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105 transition-transform duration-300 whitespace-nowrap">Japan
-								Experience</a>
-							<a href="tim.html"
-								class="rounded-md border border-gray-500 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105 transition-transform duration-300">Tim</a>
-							<a href="evan.html"
-								class="rounded-md border border-gray-500 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105 transition-transform duration-300">Evan</a>
-							<a href="sam.html"
-								class="rounded-md border border-gray-500 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105 transition-transform duration-300">Sam</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center lg:gap-[250px] md:w-full md:justify-between">
+                <!-- Navbar menu buttons -->
+                    <div class="flex gap-3 flex-shrink-0 items-center">
+                        <img class="block h-8 w-auto rounded" src="img/japan.jpg" alt="Japan" />
+                        <!-- Navbar's Japanese flag -->
+                        <h1 class="font-bold text-gray-100 text-3xl">SIT Blog</h1>
+                        <!-- Navbar's title -->
+                    </div>
+                    <div class="hidden md:ml-6 md:block">
+                    <!-- Div that gets hidden when using burger menu -->
+                        <div class="flex space-x-4">
+                        <!-- Navar menu buttons to other pages -->
+                            <a href="index.html"
+                                class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white border border-gray-500 hover:scale-105 transition-transform duration-300"
+                                aria-current="page">Home</a>
+                            <!-- Link to other pages with border and hover animation -->
+                            <a href="japan.html"
+                                class="rounded-md border border-gray-500 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105 transition-transform duration-300 whitespace-nowrap">Japan
+                                Experience</a>
+                            <a href="tim.html"
+                                class="rounded-md border border-gray-500 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105 transition-transform duration-300">Tim</a>
+                            <a href="evan.html"
+                                class="rounded-md border border-gray-500 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105 transition-transform duration-300">Evan</a>
+                            <a href="sam.html"
+                                class="rounded-md border border-gray-500 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105 transition-transform duration-300">Sam</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<div class="hidden" id="mobile-menu">
-			<div class="space-y-1 px-2 pb-3 pt-2">
-				<a href="index.html" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
-					aria-current="page">Home</a>
-				<a href="japan.html"
-					class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Japan</a>
-				<a href="tim.html"
-					class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Tim</a>
-				<a href="evan.html"
-					class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Evan</a>
-				<a href="sam.html"
-					class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Sam</a>
-			</div>
-		</div>
-	</nav>
+        <div class="hidden" id="mobile-menu">
+        <!-- Menu that appears when using the burger menu -->
+            <div class="space-y-1 px-2 pb-3 pt-2">
+                <a href="index.html" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                    aria-current="page">Home</a>
+                <a href="japan.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Japan</a>
+                <a href="tim.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Tim</a>
+                <a href="evan.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Evan</a>
+                <a href="sam.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Sam</a>
+            </div>
+        </div>
+    </nav>
 
 	<main>
 		<div class="container w-full md:max-w-3xl mx-auto md:py-20 pb-10 pr-8 pl-8">
@@ -158,67 +170,71 @@
 		</div>
 	</main>
 
-	<footer class="border-t bg-gray-800 shadow">
-		<div class="container max-w-4xl mx-auto flex flex-col gap-6 items-center justify-center pt-6 pb-2">
-			<div class="w-full mx-auto flex justify-center flex-wrap">
-				<div class="flex w-full md:w-1/2 ">
-					<div class="px-8">
-						<h3 class="font-bold text-gray-300">About</h3>
-						<p class="py-4 text-gray-200 text-sm">
-							This website was made with ❤️ by Evan, Tim and Sam!
-						</p>
-					</div>
-				</div>
-				<div class="flex w-full md:w-1/2">
-					<div class="px-8">
-						<h3 class="font-bold text-gray-300">Githubs</h3>
-						<ul class="list-reset items-center gap-6 text-sm pt-1">
-							<div class="flex items-center gap-2">
-								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="white"
-									viewBox="0 0 24 24">
-									<path
-										d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-								</svg>
-								<a class="inline-block text-gray-300 hover:text-indigo-400 hover:underline text-indigo-300 text-lg py-1"
-									href="#">Beamcode</a>
-							</div>
-							<div class="flex items-center gap-2">
-								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="white"
-									viewBox="0 0 24 24">
-									<path
-										d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-								</svg>
-								<a class="inline-block text-gray-300 hover:text-indigo-400 hover:underline text-indigo-300 text-lg py-1"
-									href="#">Tim-xD</a>
-							</div>
-							<div class="flex items-center gap-2">
-								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="white"
-									viewBox="0 0 24 24">
-									<path
-										d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-								</svg>
-								<a class="inline-block text-gray-300 hover:text-indigo-400 hover:underline text-indigo-300 text-lg py-1"
-									href="#">EvanIov</a>
-							</div>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<p class="text-gray-300 text-sm">© Copyright 2023</p>
-		</div>
-	</footer>
+    <footer class="border-t bg-gray-800 shadow">
+        <div class="container max-w-4xl mx-auto flex flex-col gap-6 items-center justify-center pt-6 pb-2">
+            <div class="w-full mx-auto flex justify-center flex-wrap">
+                <div class="flex w-full md:w-1/2 ">
+                    <div class="px-8">
+                        <h3 class="font-bold text-gray-300">About</h3>
+                        <p class="py-4 text-gray-200 text-sm">
+                            This website was made with ❤️ by Evan, Tim and Sam!
+                        </p>
+                    </div>
+                </div>
+                <div class="flex w-full md:w-1/2">
+                    <div class="px-8">
+                        <h3 class="font-bold text-gray-300">Githubs</h3>
+                        <ul class="list-reset items-center gap-6 text-sm pt-1">
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="white"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                <!-- Github icon -->
+                                <a class="inline-block text-gray-300 hover:text-indigo-400 hover:underline text-indigo-300 text-lg py-1"
+                                    href="#">Beamcode</a>
+                                <!-- Github link with animation on hover -->
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="white"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                <a class="inline-block text-gray-300 hover:text-indigo-400 hover:underline text-indigo-300 text-lg py-1"
+                                    href="#">Tim-xD</a>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="white"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                <a class="inline-block text-gray-300 hover:text-indigo-400 hover:underline text-indigo-300 text-lg py-1"
+                                    href="#">EvanIov</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="text-gray-300 text-sm">© Copyright 2023</p>
+        </div>
+    </footer>
 
 </body>
 
 <script>
-	const button = document.querySelector('[aria-controls="mobile-menu"]');
-	const menu = document.getElementById('mobile-menu');
+// Javascript for burger menu
+    const button = document.querySelector('[aria-controls="mobile-menu"]');
+    const menu = document.getElementById('mobile-menu');
 
-	button.addEventListener('click', () => {
-		const expanded = button.getAttribute('aria-expanded') === 'true' || false;
-		button.setAttribute('aria-expanded', !expanded);
-		menu.classList.toggle('hidden');
-	});
+    button.addEventListener('click', () => {
+    // Show/hide menu when clicking on the burger menu 
+        const expanded = button.getAttribute('aria-expanded') === 'true' || false;
+        button.setAttribute('aria-expanded', !expanded);
+        menu.classList.toggle('hidden');
+    });
 </script>
 
 </html>
